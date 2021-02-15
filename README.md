@@ -1,1 +1,0 @@
-# TechArt-Trainment
