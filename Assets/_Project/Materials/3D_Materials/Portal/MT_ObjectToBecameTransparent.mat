@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-555336183017216520
+--- !u!114 &-8965756049044342750
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,25 +20,22 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MT_RifleRare
-  m_Shader: {fileID: -6465566751694194690, guid: e0ec1862ea782444199871005fea2645,
-    type: 3}
-  m_ShaderKeywords: 
+  m_Name: MT_ObjectToBecameTransparent
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_CustomRenderQueue: 3050
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - SHADOWCASTER
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_D9B3F35C:
-        m_Texture: {fileID: 2800000, guid: 40fc3df2af5712c4389d1c0d03165f16, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: f32256160b46f2c499fb14d4a492d019, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -50,7 +47,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f32256160b46f2c499fb14d4a492d019, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -61,25 +58,17 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_161140D6_Texture_1:
-        m_Texture: {fileID: 2800000, guid: f32256160b46f2c499fb14d4a492d019, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_3CE1AC52_Out_0:
-        m_Texture: {fileID: 2800000, guid: 40fc3df2af5712c4389d1c0d03165f16, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaClip: 0
+    - _AlphaClip: 1
     - _Blend: 0
     - _BumpScale: 1
     - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
+    - _Cutoff: 0.581
+    - _DstBlend: 10
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -91,13 +80,11 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
+    - _SrcBlend: 5
+    - _Surface: 1
     - _WorkflowMode: 1
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
-    - Color_B1106C4F: {r: 0.15636998, g: 1.4845334, b: 1.866667, a: 0}
-    - Color_E7F140A6: {r: 0, g: 7.1743736, b: 11.984312, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
