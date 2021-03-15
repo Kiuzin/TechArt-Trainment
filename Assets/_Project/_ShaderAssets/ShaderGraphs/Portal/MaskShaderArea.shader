@@ -1,4 +1,4 @@
-﻿Shader "Portal/MaskShader"
+﻿Shader "Portal/MaskShaderArea"
 {
     SubShader
     {
